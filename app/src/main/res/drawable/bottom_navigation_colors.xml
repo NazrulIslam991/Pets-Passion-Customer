@@ -1,0 +1,9 @@
+<!-- res/drawable/bottom_navigation_colors.xml -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:color="@color/selected_color"
+        android:state_selected="true" />
+    <item
+        android:color="@color/default_color"
+        android:state_selected="false"/>
+</selector>

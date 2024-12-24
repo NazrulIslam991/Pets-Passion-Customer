@@ -1,3 +1,31 @@
 <resources>
     <string name="app_name">PetsPassion</string>
+    <string name="admin_title">Pets Passion</string>
+    <string name="home">Home</string>
+    <string name="cart">Cart</string>
+    <string name="profile">Profile</string>
+    <string name="no_product_found">No products found</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome_messege">Welcome Back</string>
+    <string name="login_to_your_account">Login To Your Account</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="show_password">Show Password</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="login">Login</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="reset_link">Send Reset Link</string>
+    <string name="or">Or</string>
+    <string name="don_t_have_an_account">Don\'t have an Account?</string>
+    <string name="create_a_new_account">Create a new account?</string>
+    <string name="send">Send</string>
+    <string name="create_account">Create Account</string>
+    <string name="create_your_new_account">Create your new account</string>
+    <string name="name">Name</string>
+    <string name="email_hints">Email</string>
+    <string name="mobile">Mobile</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="create_done">Create Done</string>
+    <string name="already_have_an_account_hints">Already have an account?</string>
+
 </resources>

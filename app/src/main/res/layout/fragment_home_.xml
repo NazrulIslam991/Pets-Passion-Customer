@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/adminHome"
+    android:paddingTop="15dp"
+    tools:context=".Home_Fragment">
+
+    <!-- Material Search Bar -->
+    <com.mancj.materialsearchbar.MaterialSearchBar
+        style="@style/MaterialSearchBarLight"
+        app:mt_speechMode="true"
+        app:mt_hint="Search a product..."
+        app:mt_placeholder="Search..."
+        app:mt_maxSuggestionsCount="5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:mt_navIconEnabled="true"
+        app:mt_textColor="@color/blue"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/searchBar"
+        tools:ignore="MissingClass" />
+
+    <!-- SwipeRefreshLayout with RecyclerView inside -->
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/searchBar">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:scrollbars="vertical" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <!-- No products found TextView -->
+    <TextView
+        android:id="@+id/no_products_found"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_product_found"
+        android:textSize="18sp"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+</RelativeLayout>
