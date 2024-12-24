@@ -2,4 +2,11 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="adminHome">#8FAFCA</color>
+    <color name="selected_color">#FF018785</color>
+    <color name="default_color">#000000</color>
+    <color name="lavender">#8692f7</color>
+    <color name="blue">#0000FF</color>
+
+
 </resources>
