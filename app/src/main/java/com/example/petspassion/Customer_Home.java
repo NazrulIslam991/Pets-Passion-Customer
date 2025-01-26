@@ -48,15 +48,12 @@ public class Customer_Home extends AppCompatActivity implements NetworkChangeRec
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 int id = item.getItemId();
 
-                //if ((id == R.id.navigation_Cart || id == R.id.navigation_A_profile) && !sessionManager.isLoggedIn()) {
-
-                if (( id == R.id.navigation_A_profile) && !sessionManager.isLoggedIn()) {
+                if (( id == R.id.navigation_Cart || id == R.id.navigation_A_profile) && !sessionManager.isLoggedIn()) {
                     Intent loginIntent = new Intent(Customer_Home.this, Login_Page.class);
-                    loginIntent.putExtra("fragmentToLoad", id == R.id.navigation_Cart ? "Cart" : "Profile");
+                    loginIntent.putExtra("fragmentToLoad", id == R.id.navigation_Cart ? "Cart" :  "Profile");
                     startActivity(loginIntent);
                     return false;
                 }
-
 
                 if (integerDeque.contains(id)) {
                     integerDeque.remove(id);
@@ -68,18 +65,20 @@ public class Customer_Home extends AppCompatActivity implements NetworkChangeRec
             }
         });
 
+        // Network receiver to monitor network changes
         networkChangeReceiver = new NetworkChangeReceiver(this);
         registerReceiver(networkChangeReceiver, new IntentFilter(ConnectivityManager.CONNECTIVITY_ACTION));
 
-        showNetworkDialogIfNeeded();
+        showNetworkDialogIfNeeded(); // Check on startup if network is available
 
+        // Load the fragment if returning from Login_Page after successful login
         String fragmentToLoad = getIntent().getStringExtra("fragmentToLoad");
         if (fragmentToLoad != null) {
             if (fragmentToLoad.equals("Cart")) {
                 loadFragment(new Cart_Fragment());
             } else if (fragmentToLoad.equals("Profile")) {
                 loadFragment(new Profile_Fragment());
-            } // Remove Chat reference here
+            }
         }
 
     }
@@ -99,12 +98,11 @@ public class Customer_Home extends AppCompatActivity implements NetworkChangeRec
         } else if (itemId == R.id.navigation_Cart) {
             bottomNavigationView.getMenu().getItem(1).setChecked(true);
             return new Cart_Fragment();
-        } else { // For Profile
+        } else {
             bottomNavigationView.getMenu().getItem(2).setChecked(true);
             return new Profile_Fragment();
         }
     }
-
 
     private void loadFragment(Fragment fragment) {
         getSupportFragmentManager()
@@ -134,6 +132,7 @@ public class Customer_Home extends AppCompatActivity implements NetworkChangeRec
         }
     }
 
+    // Implementing the network listener
     @Override
     public void onNetworkConnected() {
         if (networkDialog != null && networkDialog.isShowing()) {
@@ -148,6 +147,7 @@ public class Customer_Home extends AppCompatActivity implements NetworkChangeRec
 
     private void showNetworkDialog() {
         if (networkDialog == null || !networkDialog.isShowing()) {
+            // Inflate the custom layout for the dialog
             View dialogView = getLayoutInflater().inflate(R.layout.dialog_check_connection, null);
 
             networkDialog = new AlertDialog.Builder(this)

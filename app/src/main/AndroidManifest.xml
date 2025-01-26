@@ -15,6 +15,15 @@
         android:theme="@style/Theme.PetsPassion"
         tools:targetApi="31">
         <activity
+            android:name=".ProductDetailsCustomers"
+            android:exported="false" />
+        <activity
+            android:name=".Categories_Base_CustomerProduct_Show"
+            android:exported="false" />
+        <activity
+            android:name=".Check_Out_Page"
+            android:exported="false" />
+        <activity
             android:name=".Create_Account_Page"
             android:exported="false" />
         <activity

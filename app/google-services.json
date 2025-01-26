@@ -1,0 +1,77 @@
+{
+  "project_info": {
+    "project_number": "1046302297913",
+    "firebase_url": "https://project-pets-passion-default-rtdb.firebaseio.com",
+    "project_id": "project-pets-passion",
+    "storage_bucket": "project-pets-passion.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1046302297913:android:4558d260fd9ccc7eed22e8",
+        "android_client_info": {
+          "package_name": "com.example.petspassion"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1046302297913-lod83auffeqh2qjt729jjg9d3pqt35n9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhcQEnVNkKrFykMh-KQnRGuF2_H9-WA6c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1046302297913-lod83auffeqh2qjt729jjg9d3pqt35n9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1046302297913:android:009c624bec27f774ed22e8",
+        "android_client_info": {
+          "package_name": "com.example.petspassion_admin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1046302297913-7i9igg3s8bkk1h79c9m7ej9ju7o8tdqq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.petspassion_admin",
+            "certificate_hash": "254705e19c7db64d19f7c53fed23c527027a7da2"
+          }
+        },
+        {
+          "client_id": "1046302297913-lod83auffeqh2qjt729jjg9d3pqt35n9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhcQEnVNkKrFykMh-KQnRGuF2_H9-WA6c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1046302297913-lod83auffeqh2qjt729jjg9d3pqt35n9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

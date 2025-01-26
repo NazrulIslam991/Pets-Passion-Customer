@@ -27,5 +27,38 @@
     <string name="confirm_password">Confirm Password</string>
     <string name="create_done">Create Done</string>
     <string name="already_have_an_account_hints">Already have an account?</string>
+    <string name="default_web_client_id">1046302297913-lod83auffeqh2qjt729jjg9d3pqt35n9.apps.googleusercontent.com</string>
+    <string name="profile_image">Profile Image</string>
+    <string name="email_address">example@gmail.com</string>
+    <string name="account_info">Account Info</string>
+    <string name="todo">TODO</string>
+    <string name="not_set">Not set</string>
+    <string name="address">Address</string>
+    <string name="logout">LogOut</string>
+    <string name="your_cart_is_empty">Your Cart is Empty</string>
+    <string name="my_cart">My Cart</string>
+    <string name="subtotal">Subtotal</string>
+    <string name="delivery">Delivery</string>
+    <string name="total_tax">Total Tax</string>
+    <string name="total">Total</string>
+    <string name="check_out">Check Out</string>
+    <string name="_0_00">0.00</string>
+    <string name="cart_image">Cart Image</string>
+    <string name="title">Title</string>
+    <string name="plus">Plus</string>
+    <string name="initial_quantity">1</string>
+    <string name="minus">Minus</string>
+    <string name="shipping_subtitle">Please fill out the form below with your details  to proceed to the checkout.</string>
+    <string name="category_name">Category Name</string>
+    <string name="out_of_stock_hints">OUT OF STOCK</string>
+    <string name="percentage">0%</string>
+    <string name="product_image">Product Image</string>
+    <string name="product_name">Product Name</string>
+    <string name="no_products_found">No products found</string>
+    <string name="product_details">Product details</string>
+    <string name="product_description">Product Description</string>
+    <string name="buy_now">Buy Now</string>
+
+
 
 </resources>
